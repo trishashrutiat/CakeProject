@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <link rel="stylesheet" href="explore.css">
+</head>
+<body>
+    <div class="topnav">
+        <div class="logo"><img src="logo.png" width="5%"></div>
+        <div class="left">
+            <a class="active" href="Home.html">Home</a>
+            <a href="#news" class="active">Coming Soon</a>
+            <a href="#contact" class="active">Contact</a>
+            <a href="#contact" class="active">About</a>
+        </div>  
+        <span class="cart">Cart</span>
+        <span class="prof">Profile</span>
+    </div>
+    <div>
+        <input type="text" id="search" placeholder="search for the cake you desire...">
+    </div>
+    <div class="item-body">
+    <div class="filter">
+        <div><strong>Filters</strong></div>
+        <div onclick="cprice()">Price<button class="b1" onclick="price()">+</button>
+            <span class="fprice">
+                <input type="checkbox">₹0 TO ₹499<br>
+                <input type="checkbox">₹550 TO ₹999<br>
+                <input type="checkbox">₹1000 AND ABOVE<br>
+            </span>
+        </div>
+        <div>Flavour        <button class="b2" onclick="flavour()">+</button>
+            <span class="fflavour">
+                <input type="checkbox">Chocolate<br>
+                <input type="checkbox">Truffle<br>
+                <input type="checkbox">Blackforet<br>
+                <input type="checkbox">Pineapple<br>
+                <input type="checkbox">ButterScotch<br>
+                <input type="checkbox">Vanilla<br>
+                <input type="checkbox">Red Velvet<br>
+                <input type="checkbox">Blueberry<br>
+                <input type="checkbox">Mixed Fruit<br>
+                <input type="checkbox">Others<br>
+            </span>
+        </div>
+        <div>Cake Type      <button class="b3" onclick="typee()">+</button>
+            <span class="ftype">
+                <input type="checkbox">Cream Cakes<br>
+                <input type="checkbox">Fondant Cakes<br>
+                <input type="checkbox">Designer Cakes<br>
+                <input type="checkbox">Photo Cakes<br>
+                <input type="checkbox">Dry Cakes<br>
+                <input type="checkbox">Jar Cakes<br>
+                <input type="checkbox">Pinata Cakes<br>
+                <input type="checkbox">Others<br>  
+            </span>
+        </div>
+        <div>Ingredients    <button class="b4" onclick="ing()">+</button>
+            <span class="fin">
+                <input type="checkbox">With Egg<br>
+                <input type="checkbox">Eggless<br>
+            </span>
+        </div>
+        <div>Shape          <button class="b5" onclick="shape()">+</button>
+            <span class="fshape">
+                <input type="checkbox">Round<br>
+                <input type="checkbox">Heart<br>
+                <input type="checkbox">Square<br>
+                <input type="checkbox">Others<br>
+            </span>
+        </div>
+        <div>Weight         <button class="b6" onclick="weight()">+</button>
+            <span class="fweight">
+                <input type="checkbox">1/2 Kg<br>
+                <input type="checkbox">1 Kg<br>
+                <input type="checkbox">1.5 Kg<br>
+                <input type="checkbox">2 Kg and More<br>
+            </span>
+        </div>
+    </div>
+    <div id="items">
+        <div class="cake">
+            <img src="./img/cake1.jpg">
+            <h2>Chocolate Truffle</h2>
+            <h4>₹500 <del>₹1000</del><span class="off">50% off</span></h4>
+        </div>
+        <div class="cake">
+            <img src="./img/cake2.jpg">
+            <h2>Vanilla Nuts</h2>
+            <h4>₹600 <del>₹800</del><span class="off">75% off</span></h4>
+        </div>
+        <div class="cake">
+            <img src="./img/cake3.jpg">
+            <h2>Mousse Truffle</h2>
+            <h4>₹1500 <del>₹1800</del><span class="off">83% off</span></h4>
+        </div>
+        <div class="cake">
+            <img src="./img/cake4.jpg">
+            <h2>Blue Muffins</h2>
+            <h4>₹300 <del>₹500</del> <span class="off">6% off</span></h4>
+        </div>
+        <div class="cake">
+            <img src="./img/cake5.jpg">
+            <h2>Death By Chocolate</h2>
+            <h4>₹2000 <del>₹2200</del><span class="off">19% off</span></h4>
+        </div>
+        <div class="cake">
+            <img src="./img/cake6.jpg">
+            <h2>Dark Chocolate</h2>
+            <h4>₹2500 <del>₹2800</del><span class="off">89% off</span></h4>
+        </div>
+        <div class="cake">
+            <img src="./img/cake7.jpg">
+            <h2>Strawberry Burst</h2>
+            <h4>₹5000 <del>₹5400</del><span class="off">93% off</span></h4>
+        </div>
+        <div class="cake">
+            <img src="./img/cake8.jpg">
+            <h2>Lemon Honey</h2>
+            <h4>₹500 <del>₹800</del><span class="off">63% off</span></h4>
+        </div>
+        <div class="cake">
+            <img src="./img/cake9.jpg">
+            <h2>Chocolate Cherry</h2>
+            <h4>₹600 <del>₹900</del><span class="off">67% off</span></h4>
+        </div>
+        <div class="cake">
+            <img src="./img/cake10.jpg">
+            <h2>Red Velvet</h2>
+            <h4>₹3500 <del>₹3900</del><span class="off">90% off</span></h4>
+        </div>
+        <div class="cake">
+            <img src="./img/cake11.png">
+            <h2>Chocolate Crunch</h2>
+            <h4>₹4500 <del>₹4800</del><span class="off">94% off</span></h4>
+        </div>
+        <div class="cake">
+            <img src="./img/cake12.jpg">
+            <h2>Chocolate Strawberry</h2>
+            <h4>₹5000 <del>₹5500</del><span class="off">91% off</span></h4>
+        </div>
+        <div class="cake">
+            <img src="./img/cake13.jpg">
+            <h2>Lavender Burst</h2>
+            <h4>₹2500 <del>₹2800</del><span class="off">89% off</span></h4>
+        </div>
+        <div class="cake">
+            <img src="./img/cake14.jpg">
+            <h2>Lavender Muffins</h2>
+            <h4>₹400 <del>₹600</del><span class="off">67% off</span></h4>
+        </div>
+        <div class="cake">
+            <img src="./img/cake15.jpg">
+            <h2>Kids Fruit Burst</h2>
+            <h4>₹1500 <del>₹1800</del><span class="off">83% off</span></h4>
+        </div>
+    </div>
+    </div>
+    <script src="explore.js"></script>
+</body>
+</html>

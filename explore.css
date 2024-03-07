@@ -1,0 +1,192 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color:burlywood;
+    background: radial-gradient( #FFD0EC, #FEECE2);
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+.topnav {
+    background-color: #333;
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+  }
+  .logo img{
+    height: auto;
+    width: 100px;
+  }
+  .cart{
+    margin-left: 330px;
+    color: white;
+  }
+  .prof{
+    margin-left: 80px;
+    color: white;
+  }
+  .left{
+    display: flex;
+    margin-left: 450px;
+  }
+  @keyframes moving-placeholder {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
+  #search {
+    animation: moving-placeholder 2s linear infinite;
+    background: linear-gradient(to right, brown, transparent, brown);
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 470px;
+    height: 40px;
+    margin-left: 480px;
+    margin-top: 30px;
+    border-radius: 20px;
+    border-width: 5px;
+    border-style: groove;
+    padding-left: 10px;
+    font-size: larger;
+    color: brown;
+    border-color: brown;
+  }
+  .item-body{
+    display: flex;
+  }
+  .filter{
+    margin-top: 100px;
+    border: 2px solid black;
+    width: 200px;
+    margin-left: 20px;
+  }
+  .filter div{
+    padding: 10px;
+    width: 150px;
+    border: 1px solid black;
+  }
+  .filter button{
+    width: 15px;
+    border-radius: 50px;
+    height: 15px;
+  }
+  .fprice, .fflavour, .ftype, .fin, .fshape, .fweight{
+    display: none;
+  }
+  .cprice{
+    border-style: none;
+    background: radial-gradient( #FFD0EC, #FEECE2);
+  }
+  .b1, .b2, .b3, .b4, .b5, .b6{
+    border-style: none;
+    color: radial-gradient( #FFD0EC, #FEECE2);
+  }
+  .b1{
+    margin-left: 70px;
+  }
+  .b2{
+    margin-left: 53px;
+  }
+  .b3{
+    margin-left: 33px;
+  }
+  .b4{
+    margin-left: 30px;
+  }
+  .b5{
+    margin-left: 62px;
+  }
+  .b6{
+    margin-left: 55px;
+  }
+  #items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 100px;
+    padding-right: 30px;
+    height: 150px;
+    margin-left: 50px;
+  }
+  #items img{
+    width: 300px;
+    padding: 30px;
+    height: 250px;
+  }
+  .cake h4{
+    color: black;
+    padding-left: 130px;
+    padding-bottom: 20px;
+    margin-top: -10px ;
+    font-size: larger;
+  }
+  .cake del{
+    font-weight:lighter
+  }
+  .cake h2{
+    padding-left: 120px;
+    margin-top: -10px;
+    padding-bottom: 20px;
+  }
+  .cake{
+    border: palevioletred;
+    border-width: 2px;
+    border-style:double;
+    border-color: palevioletred;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+
+  }
+  .cake button{
+    margin-left: 155px;
+    margin-top: 20px;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: larger;
+    background-color: brown;
+    color: burlywood;
+    margin-bottom: 20px;
+    font-weight: 200;
+  }
+  .topnav a {
+    float: left;
+    color:orange;
+    text-decoration: none;
+    font-size: 17px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 50px;
+  }
+  .topnav a:hover {
+    background-color:chocolate;
+    color: black;
+    border-radius:25px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .topnav button: hover{
+    background-color:chocolate;
+    color: black;
+    border-radius:25px;
+    padding-left: 10px;
+  }
+  .topnav a.active {
+    background-color:FFFFFF;
+    color: white;
+  }
+  .off{
+    color: green;
+    font-size:medium;
+    padding-left: 10px;
+  }

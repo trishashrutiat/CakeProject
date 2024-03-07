@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css?family= Bad+Script");
+body{
+    background:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(close-up-view-chocolate-cake-concept.jpg);
+    background-color: chocolate;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.box{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height:90vh;
+}
+.container{
+    display:flex;
+    flex-direction:column;
+    width:350px;
+    padding:0 15px 0 15px;
+}
+h1{
+    margin:10px;
+    padding-left:70px;
+    color:#111;
+    font-size:10em;
+}
+h1 span{
+    
+    display:table-cell;
+    color:aliceblue;
+    font-size: 30px;
+    padding: 10px 0 10px 0;
+    animation:animate 3.25s linear infinite ;
+}
+span:nth-child(1)
+{
+    animation-delay:0s;
+}
+span:nth-child(2)
+{
+    animation-delay:0.25s;
+}
+span:nth-child(3)
+{
+    animation-delay:0.5s;
+}
+span:nth-child(4)
+{
+    animation-delay:0.75s;
+}
+span:nth-child(5)
+{
+    animation-delay:1s;
+}
+span:nth-child(6)
+{
+    animation-delay:1.25s;
+}
+span:nth-child(7)
+{
+    animation-delay:1.50s;
+}
+span:nth-child(8)
+{
+    animation-delay:1.75s;
+}
+span:nth-child(9)
+{
+    animation-delay:2s;
+}
+span:nth-child(10)
+{
+    animation-delay:2.5s;
+}
+span:nth-child(11)
+{
+    animation-delay:3s;
+}
+span:nth-child(12)
+{
+    animation-delay:3.25s;
+}
+
+header{
+    color:aliceblue;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+.input_box .user-name{
+    height:45px;
+    width:87%;
+    border:none;
+    border-radius: 30px;
+    color:aliceblue;
+    font-size:15px;
+    padding:0 0 0 45px;
+    background:rgba(255,255,255,0.1);
+    outline:none;
+}
+.input_box .pass{
+    height:45px;
+    width:87%;
+    border:none;
+    border-radius: 30px;
+    color:aliceblue;
+    font-size:15px;
+    padding:0 0 0 45px;
+    background:rgba(255,255,255,0.1);
+    outline:none;
+    margin-top: 20px;
+}
+i{
+    position:relative;
+    top:-33px;
+    left:17px;
+    color:aliceblue;
+
+}
+::-webkit-input-placeholder{
+    color:aliceblue;
+}
+.login{
+    border:none;
+    border-radius:30px;
+    font-size:15px;
+    outline:none;
+    height:45px;
+    width:100%;
+    color:whitesmoke;
+    background:rgba(255,255,255,0.1);
+    cursor:pointer;
+    transition: 0.3;
+    margin-top: 10px;
+}
+.login:hover{
+box-shadow: 1px 5px 7px 1 px rgba(0,0,0,0.2);
+}
+.two-col{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: aliceblue;
+    font-size:small;
+    margin-top:10px;
+
+}
+.one{
+    display:flex;
+}
+.two{
+    display:flex;
+}
+label{
+    text-decoration:none;
+    color: aliceblue;
+    font-size: 15px;
+}
+.label .forget{
+    text-decoration:none;
+}
+@keyframes animate{
+    0%,100%{
+    color:#fff;
+    filter:blur(2px);
+    text-shadow: 0 0 10px #00b3ff,
+    0 0 20px #00b3ff,
+    0 0 40px #00b3ff, 
+    0 0 80px #00b3ff,
+    0 0 120px #00b3ff,
+    0 0 200px #00b3ff,
+    0 0 300px #00b3ff,
+    0 0 400px #00b3ff,
+    0 0 500px #00b3ff,
+    0 0 600px #00b3ff,
+    0 0 650px #00b3ff,
+    0 0 700px #00b3ff;
+    }
+    5%,95%{
+        color:#111;
+        filter:blur(0px);
+        text-shadow: 0 0 10px none;
+        }
+}
